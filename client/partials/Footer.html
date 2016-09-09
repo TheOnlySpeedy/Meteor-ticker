@@ -1,0 +1,14 @@
+<template name="Footer">
+  <footer class="footer">
+    <ul class="footer-action-list">
+      <li class="footer-action-item"><a class="add-tick circle-button"><i class="fa fa-pencil"></i></a></li>
+      {{#if isDark}}
+        <li class="footer-action-item"><a class="light-switch off circle-button"><i class="fa fa-toggle-off" aria-hidden="true"></i></a></li>
+      {{/if}}
+      {{#if isLightOrDefault}}
+        <li class="footer-action-item"><a class="light-switch on circle-button"><i class="fa fa-toggle-on" aria-hidden="true"></i></a></li>
+      {{/if}}
+      <li class="footer-action-item"><a class="manage-users circle-button"><i class="fa fa-users" aria-hidden="true"></i></a></li>
+    </ul>
+  </footer>
+</template>

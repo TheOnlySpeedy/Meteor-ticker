@@ -1,0 +1,11 @@
+<template name="Ticks">
+  <div class="tick-list">
+    {{#each ticks}}
+      <div class="tick">
+        <p class="message">{{msg}}</p>
+        <span class="user">{{fullName userId}}</span>
+        <span class="date">{{postTime createdAt}}</span>
+      </div>
+    {{/each}}
+  </div>
+</template>

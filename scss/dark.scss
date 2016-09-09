@@ -1,0 +1,26 @@
+@import '_base.scss';
+
+#page.dark{
+
+  .header{
+    background-color: $black;
+
+    .welcome{
+      color: $grey;
+    }
+  }
+
+  .main-layout{
+    background-color: $black;
+
+    .tick-list{
+
+      .tick{
+
+        span, p{
+          color: $white;
+        }
+      }
+    }
+  }
+}

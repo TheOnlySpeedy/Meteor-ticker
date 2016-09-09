@@ -1,0 +1,12 @@
+<template name="MainLayout">
+  <div id="page" class="{{$.Session.get 'light-switch'}}">
+    {{> Header}}
+    <main class="main-layout">
+        {{> Template.dynamic template=main}}
+    </main>
+    <div class="newTickModal">
+      {{> NewTickModal}}
+    </div>
+    {{> Footer}}
+  </div>
+</template>

@@ -1,0 +1,12 @@
+<template name="MainNav">
+  {{#if currentUser}}
+    <span class="welcome">Welcome: <span class="fullname">{{userFullName}}</span></span>
+    <a class="logout circle-button">
+      <i class="fa fa-sign-out" aria-hidden="true"></i>
+    </a>
+  {{else}}
+    <a class="login-toggle circle-button">
+      <i class="fa fa-sign-in" aria-hidden="true"></i>
+    </a>
+  {{/if}}
+</template>
